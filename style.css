@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* overflow: hidden; */
+}
+#editor-container {
+    display: flex;
+    height: calc(100vh - 40px); /* 40px reserved for the top bar */
+}
+#editor {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-right: 2px solid #ddd;
+    border-top: 1px solid;
+}
+#output {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    overflow: auto;
+    border-top: 1px solid;
+    overflow: hidden;
+}
+#top-bar {
+    height: 100px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#top-bar .logo{
+    width: 219px;
+}
+
+#top-bar .title{
+    text-align: center;
+    /* width: 76%; */
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#run-btn {
+    background-color: #ff3a3a;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: auto;
+    z-index: 10;
+}
+#divider {
+    width: 5px;
+    cursor: col-resize;
+    background-color: #ddd;
+}
+#error {
+    color: red;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+
+@media screen and (max-width: 740px) {
+    #top-bar .logo{
+        width: 160px;
+    }
+
+    #top-bar .title{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #top-bar .logo{
+        width: 120px;
+    }
+    #top-bar .title{
+        font-size: 13px
+    }
+    #top-bar {
+        height: 80px;
+    }
+    #run-btn {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #editor {
+        width: 100%;
+        height: 50%;
+        border-right: transparent;
+        border-bottom: 2px solid #ddd;
+    }
+    #output {
+        width: 100%;
+        height: 50%;
+    }
+    #editor-container {
+        display: flow;
+    }
+    #top-bar .logo{
+        width: 100px;
+    }
+    #top-bar .title{
+        font-size: 13px
+    }
+}
