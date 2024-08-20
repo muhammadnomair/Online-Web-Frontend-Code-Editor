@@ -4,7 +4,7 @@ An Online-Code-Editor project is designed and built with HTML, CSS, and JavaScri
 The features of the project includes a split screen with a coding area on the left-side and a live preview output on the right-side. 
 Users can drag the divider between the coding and the output areas to resize them according to the screen size.
 
-### Dependencies
+### Features:
 
 * Real-time Code Execution: Run HTML, CSS, and JavaScript code instantly.
 * Resizable Panels: Drag the divider to adjust the width of the editor and output panels.
